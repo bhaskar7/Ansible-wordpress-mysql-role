@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: "wordpress"
+   labels:
+      webapp: wordpress
+spec:
+   containers:
+   - name: wp
+     image: "wordpress:5.1.1-php7.3-apache"
